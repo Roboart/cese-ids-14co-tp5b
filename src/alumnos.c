@@ -24,7 +24,10 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
-
+/**
+ * @brief Constructor de algo
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
@@ -37,11 +40,17 @@ static const struct alumno_s OSVALDO_RODRIGUEZ = {
     .documento = "15.123.123",
 };
 
+/** \brief Tabla alumnos.
+ *  Esto se guarda en flash.
+ */ 
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &OSVALDO_RODRIGUEZ,
 };
 
+/** \brief ¿Cuántos alumnos hay en total?
+ *  Determinación de la cantidad total de alumnos.
+ */ 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
